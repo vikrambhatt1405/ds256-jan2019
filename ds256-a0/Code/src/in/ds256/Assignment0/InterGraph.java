@@ -14,7 +14,8 @@ public class InterGraph  {
 	public static void main(String[] args) throws IOException {	
 		
 		String inputFile = args[0]; // Should be some file on HDFS
-		String outputFile = args[1]; // Should be some file on HDFS
+		String vertexFile = args[1]; // Should be some file on HDFS
+		String edgeFile = args[2]; // Should be some file on HDFS
 		
 		SparkConf sparkConf = new SparkConf().setAppName("InterGraph");
 		JavaSparkContext sc = new JavaSparkContext(sparkConf);
