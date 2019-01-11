@@ -4,6 +4,6 @@ This is the public git repository for Course Assignments of DS256 - Scalable Sys
 
 ### Directory Structure ###
 
-* Assignment 0 (Due on 18th Jan 2019)
+* Assignment 0 (Posted on 11th Jan 2019. Due on 11:59 IST, 19th Jan 2019)
 * Assignment 1 (To be posted)
 * Assignment 2 (To be posted)
