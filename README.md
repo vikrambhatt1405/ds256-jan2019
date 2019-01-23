@@ -1,9 +1,23 @@
-# README #
+# Assignment0
+This contains the 0th assignment of the SSDS course of IISc (DS256) taught by Dr Yogesh Simmhan
 
-This is the public git repository for Course Assignments of DS256 - Scalable Systems for Data Science (Jan 2019) course offered in the Computational and Data Science Department at the Indian Institute of Science. Students are expected to fork this repository for their assignment. Instruction for assignment submission are available at http://cds.iisc.ac.in/courses/ds256/
+How to execute?
 
-### Directory Structure ###
+Go to the directory containing pom.xml & run
+	* mvn clean compile package
 
-* Assignment 0 (Posted on 11th Jan 2019. Due on 11:59 IST, 19th Jan 2019)
-* Assignment 1 (To be posted)
-* Assignment 2 (To be posted)
+then check the target directory which can be found at => /ds256-a0/Code/target
+Find the following jar => Assignment0-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+To run use the following command (must be in the directory where you have spark-submit )
+
+	* ./spark-submit --class in.ds256.Assignment0.InterGraph --master yarn --num-executors 2 --deploy-mode cluster --driver-memory 512m --executor-memory 1G --executor-cores 2 <path to jat>/Assignment0-1.0-SNAPSHOT-jar-with-dependencies.jar command_line_arguments
+
+
+* The output for FreqTag.java will be stored at => outputFile/keys" & outputFile/values (outputFile is provided as command line argument)
+* The output for TopOccurrence.java will be stored at => outputFile+"/keys" & outputFile/values (outputFile is provided as command line argument)
+* The output for InterGraph.java will be stored at => vertexFile & edgeFile (both provided as command line arguement)
+
+All outputs will be stored in the hdfs
+
+
