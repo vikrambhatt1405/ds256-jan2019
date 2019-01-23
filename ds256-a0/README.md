@@ -5,13 +5,15 @@ This is the public git repository for Assignment 0 of DS256 - Scalable Systems f
 ### Directory Structure ###
 
 * Code
-	* src/main/java/in/ds256/Assignment0
-		* FreqTag​.java
-		* TopCoOccurrence.java
-		* InterGraph.java
-	* pom.xml
-* Logs 
-	* logs.txt (To be modified by the student. Contents discussed later)
+	* src/main/scala/
+		* FreqTag.scala
+		* TopCoOccurrence.scala
+		* InterGraph.scala
+	* build.sbt
+* Logs
+	* logs.txt
+* Results
+	* a0_\*.txt (Contains results for all the questions)
 * Project_Report.pdf (To be added by the student)
 
 ### Contents of logs.txt file ###
