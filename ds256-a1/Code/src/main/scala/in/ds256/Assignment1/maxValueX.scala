@@ -17,16 +17,15 @@ object maxValueX {
     val sc = spark.sparkContext
     
     val inputVertexRDD = sc.textFile(vertexFile)
-    val inputEdgeRDD = sc.textFile(vertexFile)
+    val inputEdgeRDD = sc.textFile(edgeFile)
     
-    val vertexRDD: RDD[(Long, Long)] = inputVertexRDD.map(entry => { 
-      val tokens = entry.split(" ");
-      ( tokens(0).toLong, tokens(1).toLong) 
+    val vertexRDD: RDD[(Long, Long)] = inputVertexRDD.map(vertexID => { 
+      ( vertexID.toLong, vertexID.toLong) 
     })
     
-    val edgeRDD: RDD[Edge[Long]] = inputEdgeRDD.map(entry => { 
-      val tokens = entry.split(" ");
-      Edge[Long]( tokens(0).toLong, tokens(1).toLong, tokens(2).toLong) 
+    val edgeRDD: RDD[Edge[Long]] = inputEdgeRDD.map(edge => { 
+      val tokens = edge.split(" ");
+      Edge[Long]( tokens(0).toLong, tokens(1).toLong, 0L) 
     })
     
     val graph: Graph[Long, Long] = Graph(vertexRDD, edgeRDD)
