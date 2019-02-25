@@ -6,7 +6,25 @@ This is the public git repository for Assignment 1 of DS256 - Scalable Systems f
 
 * Code
 	* src/main/java/in/ds256/Assignment1
-		* 
+		* bipartite.java 
+		* color.java
+		* conductance.java
+		* euler.java
+		* ktruss.java
+		* pr.java
+		* scc.java
+		* span.java
+		* wcc.java
+	* src/main/scala/in/ds256/Assignment1
+		* bipartiteX.scala 
+		* colorX.scala
+		* conductanceX.scala
+		* eulerX.scala
+		* ktrussX.scala
+		* prX.scala
+		* sccX.scala
+		* spanX.scala
+		* wccX.scala
 	* pom.xml
 * Logs 
 	* logs.txt (To be modified by the student. Contents discussed later)
